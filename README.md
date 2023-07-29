@@ -1,6 +1,6 @@
 # NumberImageProcessing
 
-Second large project in Python, October 2020!
+Second large project in Python, August 2020!
 
 An attempt to read handwriting images through an algorithm I created myself (which was a brute-force min pixel distance mean), which also included functions to auto scale and shift to try to improve the reading.
 
