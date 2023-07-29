@@ -1,0 +1,109 @@
+if number == 0:
+        if variant == 0:
+            if variableID == 0:
+                return("pixelZeroA");
+            if variableID == 1:
+                return("zeroAPixelsX");
+            if variableID == 2:
+                return("zeroAPixelsY");
+        if variant == 1:
+            if variableID == 0:
+                return("pixelZeroB");
+            if variableID == 1:
+                return("zeroBPixelsX");
+            if variableID == 2:
+                return("zeroBPixelsY");
+    if number == 1:
+        if variant == 0:
+            if variableID == 0:
+                return("pixelOneA");
+            if variableID == 1:
+                return("oneAPixelsX");
+            if variableID == 2:
+                return("oneAPixelsY");
+        if variant == 1:
+            if variableID == 0:
+                return("pixelOneB");
+            if variableID == 1:
+                return("oneBPixelsX");
+            if variableID == 2:
+                return("oneBPixelsY");
+    if number == 2:
+        if variant == 0:
+            if variableID == 0:
+                return("pixelTwoA");
+            if variableID == 1:
+                return("twoAPixelsX");
+            if variableID == 2:
+                return("twoAPixelsY");
+        if variant == 1:
+            if variableID == 0:
+                return("pixelTwoB");
+            if variableID == 1:
+                return("twoBPixelsX");
+            if variableID == 2:
+                return("twoBPixelsY");
+    if number == 3:
+        if variant == 0:
+            if variableID == 0:
+                return("pixelThreeA");
+            if variableID == 1:
+                return("threeAPixelsX");
+            if variableID == 2:
+                return("threeAPixelsY");
+        if variant == 1:
+            if variableID == 0:
+                return("pixelThreeB");
+            if variableID == 1:
+                return("threeBPixelsX");
+            if variableID == 2:
+                return("threeBPixelsY");
+    if number == 4:
+        if variant == 0:
+            if variableID == 0:
+                return("pixelFourA");
+            if variableID == 1:
+                return("fourAPixelsX");
+            if variableID == 2:
+                return("fourAPixelsY");
+        if variant == 1:
+            if variableID == 0:
+                return("pixelFourB");
+            if variableID == 1:
+                return("fourBPixelsX");
+            if variableID == 2:
+                return("fourBPixelsY");
+    if number == 5:
+        if variant == 0:
+            if variableID == 0:
+                return("pixelFiveA");
+            if variableID == 1:
+                return("fiveAPixelsX");
+            if variableID == 2:
+                return("fiveAPixelsY");
+        if variant == 1:
+            if variableID == 0:
+                return("pixelFiveB");
+            if variableID == 1:
+                return("fiveBPixelsX");
+            if variableID == 2:
+                return("fiveBPixelsY");
+
+
+
+
+forLoopY = 0;
+while forLoopY < IMAGESIZE: #forLoop because of preference over python FOR
+    forLoopX = 0;
+    while forLoopX < IMAGESIZE:
+        if pixelInputImage[forLoopY][forLoopX] == 1:
+            inputPixelsX.append(forLoopX);
+            inputPixelsY.append(forLoopY);
+            print("Found Pixel at ", forLoopX, forLoopY);
+        forLoopX += 1;
+    forLoopY += 1;
+print(inputPixelsX,"and",inputPixelsY);
+
+
+
+

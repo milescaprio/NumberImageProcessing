@@ -1,0 +1,95 @@
+Image Processing: Figure out the number
+
+
+1.Create example numbers: 16*16 
+
+
+Example: 
+
+
+[ 
+
+0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0; 0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0; 
+
+0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0; 
+
+] 
+
+1.5. Array of base number pixel locations, one x one y (or r and c) 
+
+
+
+2.Import processing image 
+
+, get as matrix 
+
+2.5.Array of imported number pixel locations, one x one y (or r and c) 
+
+EXTRA VERSION 3.Fit to corner/center? (Try different Center methods: Midpoint/median/mean 
+
+EXTRA VERSION 4.Find scale 
+
+5.Algorithm 
+
+a.For each base number{ 
+
+EXTRA VERSION For each shift place{ 
+
+b.For each import number ‘on’ pixel{ 
+
+c.For each base number ‘on’ pixel{ 
+
+d.find distance between pixels 
+
+e. check if distance is closer than previous (find closest pixel) 
+
+} 
+
+f.record distance score onto total score so far (determine score per base number) 
+
+} 
+
+g. check if score is lower than last base number’s (lower is better score) (find best score) 
+
+} 
+
+h. Output best number fit 
+
+
+
+
+
+different ideas 
+
+
+no scale no shift 
+
+brute force shift 
+
+shift to {corner, range center, mean center, median center, COM, reverse COM} 
+
+shift and scale uniform 
+
+shift and scale axis seperately 
+
+“rotate” (move pixel checked by previous error)
